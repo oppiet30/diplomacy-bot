@@ -1,0 +1,2 @@
+# Rule-based play only; do not install the legacy training requirements.
+diplomacy==1.1.2

@@ -15,7 +15,6 @@
 import collections
 import logging
 import random
-from diplomacy_research.models.state_space import build_game_from_state_proto
 
 # --- Constants ---
 LOGGER = logging.getLogger(__name__)
@@ -87,12 +86,15 @@ def run_ruleset(state_proto, power_name):
         :param power_name: The name of the power we are playing
         :return: A list of orders for that power.
     """
-    # Power has been eliminated
-    if not state_proto.units[power_name].value and not state_proto.centers[power_name].value:
-        return []
+    from diplomacy_research.models.state_space import build_game_from_state_proto
+    return run_game(build_game_from_state_proto(state_proto), power_name)
 
-    # Building the game object
-    game = build_game_from_state_proto(state_proto)
+
+def run_game(game, power_name):
+    """Run DumbBot directly on a diplomacy.Game, without training dependencies."""
+    power = game.get_power(power_name)
+    if not power.units and not power.centers and not power.retreats:
+        return []
 
     # Game is forming / completed
     if game.get_current_phase()[0] not in 'SFW':

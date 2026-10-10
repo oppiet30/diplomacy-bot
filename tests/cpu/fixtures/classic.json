@@ -1,0 +1,5424 @@
+{
+  "schema": 1,
+  "variantID": 1,
+  "countries": [
+    {
+      "countryID": 1,
+      "name": "England"
+    },
+    {
+      "countryID": 2,
+      "name": "France"
+    },
+    {
+      "countryID": 3,
+      "name": "Italy"
+    },
+    {
+      "countryID": 4,
+      "name": "Germany"
+    },
+    {
+      "countryID": 5,
+      "name": "Austria"
+    },
+    {
+      "countryID": 6,
+      "name": "Turkey"
+    },
+    {
+      "countryID": 7,
+      "name": "Russia"
+    }
+  ],
+  "territories": [
+    {
+      "id": 1,
+      "name": "Clyde",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": 1,
+      "coast": "No",
+      "coastParentID": 1,
+      "borders": [
+        {
+          "id": 2,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 3,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 52,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 58,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 2,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 3,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 52,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 58,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Edinburgh",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": 1,
+      "coast": "No",
+      "coastParentID": 2,
+      "borders": [
+        {
+          "id": 1,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 3,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 4,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 52,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 1,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 3,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 4,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 52,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Liverpool",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": 1,
+      "coast": "No",
+      "coastParentID": 3,
+      "borders": [
+        {
+          "id": 1,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 2,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 4,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 5,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 58,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 59,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 1,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 2,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 4,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 5,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 58,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 59,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Yorkshire",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": 1,
+      "coast": "No",
+      "coastParentID": 4,
+      "borders": [
+        {
+          "id": 2,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 3,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 5,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 6,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 2,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 3,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 5,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 6,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Wales",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": 1,
+      "coast": "No",
+      "coastParentID": 5,
+      "borders": [
+        {
+          "id": 3,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 4,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 6,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 59,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 60,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 3,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 4,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 6,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 59,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 60,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "London",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": 1,
+      "coast": "No",
+      "coastParentID": 6,
+      "borders": [
+        {
+          "id": 4,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 5,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 60,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 4,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 5,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 60,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Portugal",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 7,
+      "borders": [
+        {
+          "id": 8,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 8,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 76,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 77,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Spain",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": null,
+      "coast": "Parent",
+      "coastParentID": 8,
+      "borders": [
+        {
+          "id": 7,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 49,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 50,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 62,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 63,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 7,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 49,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 50,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "North Africa",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 9,
+      "borders": [
+        {
+          "id": 10,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 62,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 10,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 62,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Tunis",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 10,
+      "borders": [
+        {
+          "id": 9,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 62,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 64,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 9,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 62,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 64,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Naples",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": 3,
+      "coast": "No",
+      "coastParentID": 11,
+      "borders": [
+        {
+          "id": 12,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 16,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 64,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 12,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 16,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 64,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Rome",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": 3,
+      "coast": "No",
+      "coastParentID": 12,
+      "borders": [
+        {
+          "id": 11,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 13,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 15,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 16,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 64,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 11,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 13,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 15,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 16,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 64,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Tuscany",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": 3,
+      "coast": "No",
+      "coastParentID": 13,
+      "borders": [
+        {
+          "id": 12,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 14,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 15,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 63,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 64,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 12,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 14,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 15,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 63,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 64,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Piedmont",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": 3,
+      "coast": "No",
+      "coastParentID": 14,
+      "borders": [
+        {
+          "id": 13,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 15,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 49,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 63,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 70,
+          "army": true,
+          "fleet": false
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 13,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 15,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 49,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 63,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 70,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Venice",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": 3,
+      "coast": "No",
+      "coastParentID": 15,
+      "borders": [
+        {
+          "id": 12,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 13,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 14,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 16,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 66,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 70,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 73,
+          "army": true,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 12,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 13,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 14,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 16,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 66,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 70,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 73,
+          "army": true,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Apulia",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": 3,
+      "coast": "No",
+      "coastParentID": 16,
+      "borders": [
+        {
+          "id": 11,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 12,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 15,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 66,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 11,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 12,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 15,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 66,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Greece",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 17,
+      "borders": [
+        {
+          "id": 18,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 19,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 20,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 67,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 18,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 19,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 20,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 67,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 81,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Albania",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 18,
+      "borders": [
+        {
+          "id": 17,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 19,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 66,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 73,
+          "army": true,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 17,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 19,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 66,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 73,
+          "army": true,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Serbia",
+      "type": "Land",
+      "supply": true,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 19,
+      "borders": [
+        {
+          "id": 17,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 18,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 20,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 21,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 73,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 74,
+          "army": true,
+          "fleet": false
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 17,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 18,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 20,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 21,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 73,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 74,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Bulgaria",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": null,
+      "coast": "Parent",
+      "coastParentID": 20,
+      "borders": [
+        {
+          "id": 17,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 19,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 21,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 22,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 67,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 69,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 17,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 19,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 21,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 22,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Rumania",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 21,
+      "borders": [
+        {
+          "id": 19,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 20,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 27,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 28,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 69,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 74,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 75,
+          "army": true,
+          "fleet": false
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 19,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 20,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 27,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 28,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 69,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 74,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 75,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 80,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Constantinople",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": 6,
+      "coast": "No",
+      "coastParentID": 22,
+      "borders": [
+        {
+          "id": 20,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 23,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 24,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 67,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 69,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 20,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 23,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 24,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 67,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 69,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 80,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 81,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Smyrna",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": 6,
+      "coast": "No",
+      "coastParentID": 23,
+      "borders": [
+        {
+          "id": 22,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 24,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 25,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 26,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 67,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 68,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 22,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 24,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 25,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 26,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 67,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 68,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Ankara",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": 6,
+      "coast": "No",
+      "coastParentID": 24,
+      "borders": [
+        {
+          "id": 22,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 23,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 25,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 69,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 22,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 23,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 25,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 69,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Armenia",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": 6,
+      "coast": "No",
+      "coastParentID": 25,
+      "borders": [
+        {
+          "id": 23,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 24,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 26,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 27,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 69,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 23,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 24,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 26,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 27,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 69,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Syria",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": 6,
+      "coast": "No",
+      "coastParentID": 26,
+      "borders": [
+        {
+          "id": 23,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 25,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 68,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 23,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 25,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 68,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Sevastopol",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": 7,
+      "coast": "No",
+      "coastParentID": 27,
+      "borders": [
+        {
+          "id": 21,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 25,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 28,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 31,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 69,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 21,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 25,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 28,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 31,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 69,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Ukraine",
+      "type": "Land",
+      "supply": false,
+      "homeCountryID": 7,
+      "coast": "No",
+      "coastParentID": 28,
+      "borders": [
+        {
+          "id": 21,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 27,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 29,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 31,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 75,
+          "army": true,
+          "fleet": false
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 21,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 27,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 29,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 31,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 75,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Warsaw",
+      "type": "Land",
+      "supply": true,
+      "homeCountryID": 7,
+      "coast": "No",
+      "coastParentID": 29,
+      "borders": [
+        {
+          "id": 28,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 30,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 31,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 39,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 40,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 75,
+          "army": true,
+          "fleet": false
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 28,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 30,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 31,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 39,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 40,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 75,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Livonia",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": 7,
+      "coast": "No",
+      "coastParentID": 30,
+      "borders": [
+        {
+          "id": 29,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 31,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 32,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 39,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 56,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 57,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 29,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 31,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 32,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 39,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 56,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 57,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 79,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Moscow",
+      "type": "Land",
+      "supply": true,
+      "homeCountryID": 7,
+      "coast": "No",
+      "coastParentID": 31,
+      "borders": [
+        {
+          "id": 27,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 28,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 29,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 30,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 32,
+          "army": true,
+          "fleet": false
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 27,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 28,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 29,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 30,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 32,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "St. Petersburg",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": 7,
+      "coast": "Parent",
+      "coastParentID": 32,
+      "borders": [
+        {
+          "id": 30,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 31,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 33,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 35,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 51,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 57,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 30,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 31,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 33,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 35,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Finland",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": 7,
+      "coast": "No",
+      "coastParentID": 33,
+      "borders": [
+        {
+          "id": 32,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 34,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 35,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 57,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 32,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 34,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 35,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 57,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 79,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Sweden",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 34,
+      "borders": [
+        {
+          "id": 33,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 35,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 36,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 54,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 56,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 57,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 33,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 35,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 36,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 54,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 56,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 57,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Norway",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 35,
+      "borders": [
+        {
+          "id": 32,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 33,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 34,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 51,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 52,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 54,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 32,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 33,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 34,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 51,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 52,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 54,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 78,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Denmark",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 36,
+      "borders": [
+        {
+          "id": 34,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 37,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 54,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 55,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 56,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 34,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 37,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 54,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 55,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 56,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Kiel",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": 4,
+      "coast": "No",
+      "coastParentID": 37,
+      "borders": [
+        {
+          "id": 36,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 38,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 41,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 42,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 43,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 55,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 56,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 36,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 38,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 41,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 42,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 43,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 55,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 56,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Berlin",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": 4,
+      "coast": "No",
+      "coastParentID": 38,
+      "borders": [
+        {
+          "id": 37,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 39,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 40,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 41,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 56,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 37,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 39,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 40,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 41,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 56,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Prussia",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": 4,
+      "coast": "No",
+      "coastParentID": 39,
+      "borders": [
+        {
+          "id": 29,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 30,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 38,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 40,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 56,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 29,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 30,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 38,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 40,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 56,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Silesia",
+      "type": "Land",
+      "supply": false,
+      "homeCountryID": 4,
+      "coast": "No",
+      "coastParentID": 40,
+      "borders": [
+        {
+          "id": 29,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 38,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 39,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 41,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 71,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 75,
+          "army": true,
+          "fleet": false
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 29,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 38,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 39,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 41,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 71,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 75,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Munich",
+      "type": "Land",
+      "supply": true,
+      "homeCountryID": 4,
+      "coast": "No",
+      "coastParentID": 41,
+      "borders": [
+        {
+          "id": 37,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 38,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 40,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 42,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 48,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 70,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 71,
+          "army": true,
+          "fleet": false
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 37,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 38,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 40,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 42,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 48,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 70,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 71,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Ruhr",
+      "type": "Land",
+      "supply": false,
+      "homeCountryID": 4,
+      "coast": "No",
+      "coastParentID": 42,
+      "borders": [
+        {
+          "id": 37,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 41,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 43,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 44,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 48,
+          "army": true,
+          "fleet": false
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 37,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 41,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 43,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 44,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 48,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Holland",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 43,
+      "borders": [
+        {
+          "id": 37,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 42,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 44,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 55,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 37,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 42,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 44,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 55,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Belgium",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 44,
+      "borders": [
+        {
+          "id": 42,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 43,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 45,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 48,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 60,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 42,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 43,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 45,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 48,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 60,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Picardy",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": 2,
+      "coast": "No",
+      "coastParentID": 45,
+      "borders": [
+        {
+          "id": 44,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 46,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 47,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 48,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 60,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 44,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 46,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 47,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 48,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 60,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Brest",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": 2,
+      "coast": "No",
+      "coastParentID": 46,
+      "borders": [
+        {
+          "id": 45,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 47,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 50,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 60,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 45,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 47,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 50,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 60,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Paris",
+      "type": "Land",
+      "supply": true,
+      "homeCountryID": 2,
+      "coast": "No",
+      "coastParentID": 47,
+      "borders": [
+        {
+          "id": 45,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 46,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 48,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 50,
+          "army": true,
+          "fleet": false
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 45,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 46,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 48,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 50,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Burgundy",
+      "type": "Land",
+      "supply": false,
+      "homeCountryID": 2,
+      "coast": "No",
+      "coastParentID": 48,
+      "borders": [
+        {
+          "id": 41,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 42,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 44,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 45,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 47,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 49,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 50,
+          "army": true,
+          "fleet": false
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 41,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 42,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 44,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 45,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 47,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 49,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 50,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Marseilles",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": 2,
+      "coast": "No",
+      "coastParentID": 49,
+      "borders": [
+        {
+          "id": 8,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 14,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 48,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 50,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 63,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 8,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 14,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 48,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 50,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 63,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 77,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Gascony",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": 2,
+      "coast": "No",
+      "coastParentID": 50,
+      "borders": [
+        {
+          "id": 8,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 46,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 47,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 48,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 49,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 8,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 46,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 47,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 48,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 49,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 76,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Barents Sea",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 51,
+      "borders": [
+        {
+          "id": 35,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 52,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 32,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 35,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 52,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 78,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Norwegian Sea",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 52,
+      "borders": [
+        {
+          "id": 1,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 2,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 35,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 51,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 58,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 1,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 2,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 35,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 51,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 58,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "name": "North Sea",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 53,
+      "borders": [
+        {
+          "id": 2,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 4,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 6,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 35,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 36,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 43,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 44,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 52,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 54,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 55,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 60,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 2,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 4,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 6,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 35,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 36,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 43,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 44,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 52,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 54,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 55,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 60,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Skagerrack",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 54,
+      "borders": [
+        {
+          "id": 34,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 35,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 36,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 34,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 35,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 36,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Heligoland Bight",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 55,
+      "borders": [
+        {
+          "id": 36,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 37,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 43,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 36,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 37,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 43,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Baltic Sea",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 56,
+      "borders": [
+        {
+          "id": 30,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 34,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 36,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 37,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 38,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 39,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 57,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 30,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 34,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 36,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 37,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 38,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 39,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 57,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "name": "Gulf of Bothnia",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 57,
+      "borders": [
+        {
+          "id": 30,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 33,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 34,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 56,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 32,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 30,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 33,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 34,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 56,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 79,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "name": "North Atlantic Ocean",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 58,
+      "borders": [
+        {
+          "id": 1,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 3,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 52,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 59,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 1,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 3,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 52,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 59,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Irish Sea",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 59,
+      "borders": [
+        {
+          "id": 3,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 5,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 58,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 60,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 3,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 5,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 58,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 60,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "name": "English Channel",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 60,
+      "borders": [
+        {
+          "id": 5,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 6,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 44,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 45,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 46,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 59,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 5,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 6,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 44,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 45,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 46,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 53,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 59,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Mid-Atlantic Ocean",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 61,
+      "borders": [
+        {
+          "id": 7,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 9,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 46,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 50,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 58,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 59,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 60,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 62,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 8,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 7,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 9,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 46,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 50,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 58,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 59,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 60,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 62,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 76,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 77,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Western Mediterranean",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 62,
+      "borders": [
+        {
+          "id": 9,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 10,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 63,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 64,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 8,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 9,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 10,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 63,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 64,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 77,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Gulf of Lyons",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 63,
+      "borders": [
+        {
+          "id": 13,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 14,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 49,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 62,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 64,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 8,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 13,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 14,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 49,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 62,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 64,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 77,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Tyrrhenian Sea",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 64,
+      "borders": [
+        {
+          "id": 10,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 11,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 12,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 13,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 62,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 63,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 10,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 11,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 12,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 13,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 62,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 63,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Ionian Sea",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 65,
+      "borders": [
+        {
+          "id": 10,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 11,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 16,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 17,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 18,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 64,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 66,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 67,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 68,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 10,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 11,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 16,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 17,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 18,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 64,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 66,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 67,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 68,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Adriatic Sea",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 66,
+      "borders": [
+        {
+          "id": 15,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 16,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 18,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 73,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 15,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 16,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 18,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 73,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "name": "Aegean Sea",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 67,
+      "borders": [
+        {
+          "id": 17,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 22,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 23,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 68,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 20,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 17,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 22,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 23,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 68,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 81,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "name": "Eastern Mediterranean",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 68,
+      "borders": [
+        {
+          "id": 23,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 26,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 67,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 23,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 26,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 65,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 67,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Black Sea",
+      "type": "Sea",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "No",
+      "coastParentID": 69,
+      "borders": [
+        {
+          "id": 21,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 22,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 24,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 25,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 27,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 20,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 21,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 22,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 24,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 25,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 27,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 80,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "name": "Tyrolia",
+      "type": "Land",
+      "supply": false,
+      "homeCountryID": 5,
+      "coast": "No",
+      "coastParentID": 70,
+      "borders": [
+        {
+          "id": 14,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 15,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 41,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 71,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 72,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 73,
+          "army": true,
+          "fleet": false
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 14,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 15,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 41,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 71,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 72,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 73,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "name": "Bohemia",
+      "type": "Land",
+      "supply": false,
+      "homeCountryID": 5,
+      "coast": "No",
+      "coastParentID": 71,
+      "borders": [
+        {
+          "id": 40,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 41,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 70,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 72,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 75,
+          "army": true,
+          "fleet": false
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 40,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 41,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 70,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 72,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 75,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "name": "Vienna",
+      "type": "Land",
+      "supply": true,
+      "homeCountryID": 5,
+      "coast": "No",
+      "coastParentID": 72,
+      "borders": [
+        {
+          "id": 70,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 71,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 73,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 74,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 75,
+          "army": true,
+          "fleet": false
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 70,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 71,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 73,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 74,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 75,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "name": "Trieste",
+      "type": "Coast",
+      "supply": true,
+      "homeCountryID": 5,
+      "coast": "No",
+      "coastParentID": 73,
+      "borders": [
+        {
+          "id": 15,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 18,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 19,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 66,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 70,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 72,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 74,
+          "army": true,
+          "fleet": false
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 15,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 18,
+          "army": true,
+          "fleet": true
+        },
+        {
+          "id": 19,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 66,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 70,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 72,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 74,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Budapest",
+      "type": "Land",
+      "supply": true,
+      "homeCountryID": 5,
+      "coast": "No",
+      "coastParentID": 74,
+      "borders": [
+        {
+          "id": 19,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 21,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 72,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 73,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 75,
+          "army": true,
+          "fleet": false
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 19,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 21,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 72,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 73,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 75,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Galicia",
+      "type": "Land",
+      "supply": false,
+      "homeCountryID": 5,
+      "coast": "No",
+      "coastParentID": 75,
+      "borders": [
+        {
+          "id": 21,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 28,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 29,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 40,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 71,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 72,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 74,
+          "army": true,
+          "fleet": false
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 21,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 28,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 29,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 40,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 71,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 72,
+          "army": true,
+          "fleet": false
+        },
+        {
+          "id": 74,
+          "army": true,
+          "fleet": false
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Spain (North Coast)",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "Child",
+      "coastParentID": 8,
+      "borders": [
+        {
+          "id": 7,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 50,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 7,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 50,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Spain (South Coast)",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "Child",
+      "coastParentID": 8,
+      "borders": [
+        {
+          "id": 7,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 49,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 62,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 63,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 7,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 49,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 61,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 62,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 63,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "name": "St. Petersburg (North Coast)",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": 7,
+      "coast": "Child",
+      "coastParentID": 32,
+      "borders": [
+        {
+          "id": 35,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 51,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 35,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 51,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "name": "St. Petersburg (South Coast)",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": 7,
+      "coast": "Child",
+      "coastParentID": 32,
+      "borders": [
+        {
+          "id": 30,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 33,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 57,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 30,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 33,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 57,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "name": "Bulgaria (North Coast)",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "Child",
+      "coastParentID": 20,
+      "borders": [
+        {
+          "id": 21,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 22,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 69,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 21,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 22,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 69,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "name": "Bulgaria (South Coast)",
+      "type": "Coast",
+      "supply": false,
+      "homeCountryID": null,
+      "coast": "Child",
+      "coastParentID": 20,
+      "borders": [
+        {
+          "id": 17,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 22,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 67,
+          "army": false,
+          "fleet": true
+        }
+      ],
+      "coastalBorders": [
+        {
+          "id": 17,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 22,
+          "army": false,
+          "fleet": true
+        },
+        {
+          "id": 67,
+          "army": false,
+          "fleet": true
+        }
+      ]
+    }
+  ]
+}

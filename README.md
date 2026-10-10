@@ -1,5 +1,7 @@
 # Supervised and RL Models for No Press Diplomacy
 
+For this fork’s CPU-only rule-based webDiplomacy bot, see [CPU-BOT.md](CPU-BOT.md).
+
 This repository contains the source code used to develop a supervised and RL agent that can play the No Press version of Diplomacy.  
 
 <p align="center">

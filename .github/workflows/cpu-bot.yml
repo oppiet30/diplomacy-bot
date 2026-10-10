@@ -1,0 +1,26 @@
+name: CPU bot tests
+on:
+  workflow_dispatch:
+  push:
+    paths: ['cpu_bot/**', 'tests/cpu/**', 'requirements-cpu.txt', 'diplomacy_research/players/rulesets/dumbbot_ruleset.py', '.github/workflows/cpu-bot.yml']
+  pull_request:
+    paths: ['cpu_bot/**', 'tests/cpu/**', 'requirements-cpu.txt', 'diplomacy_research/players/rulesets/dumbbot_ruleset.py', '.github/workflows/cpu-bot.yml']
+permissions:
+  contents: read
+jobs:
+  test:
+    if: github.repository == 'oppiet30/diplomacy-bot'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        python: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: requirements-cpu.txt
+      - run: python -m pip install -r requirements-cpu.txt
+      - run: python -m unittest discover -s tests/cpu -v
