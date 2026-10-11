@@ -5,6 +5,7 @@ import threading
 import unittest
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from unittest.mock import patch
 from diplomacy import Game
 from cpu_bot.board import Board, normalized
 from cpu_bot.client import Client, orders_match, run, validate_config
@@ -116,6 +117,54 @@ class BotTests(unittest.TestCase):
         saved=dict(row,terrID=None,fromTerrID=0)
         self.assertTrue(orders_match([row],[saved]))
         self.assertFalse(orders_match([row],[dict(saved,type='Wait')]))
+
+    def test_no_required_orders_are_skipped_without_posts(self):
+        context, public = snapshot()
+        class Fake:
+            url = 'http://webdip.local/api.php'
+            def __init__(self, *args): pass
+            def context(self, _): return copy.deepcopy(context)
+            def public_file(self, _): raise AssertionError('No board needed')
+            def request(self, *args): raise AssertionError('No orders should be posted')
+        config = dict(api_url=Fake.url, api_keys=dict(bot1='a'*64), game_ids=[5])
+        for phase in ('Builds', 'Retreats'):
+            for status in (['None'], []):
+                with self.subTest(phase=phase, status=status):
+                    context['game']['phase'] = phase
+                    context['member']['orderStatus'] = status
+                    context['orders'] = {'orders': []}
+                    self.assertEqual(run(config, submit=True, log=lambda _: None, client_class=Fake), 0)
+
+    def test_builds_respect_server_slots_and_wait_can_be_submitted(self):
+        engine = Game()
+        state = engine.get_state()
+        state['name'] = 'W1901A'
+        state['units']['FRANCE'] = ['A PAR']
+        engine.set_state(state)
+        context, public = snapshot(engine)
+        context['orders'] = {'orders': [{'type': 'Build Army', 'terrID': None}]}
+        posts, ready = [], []
+        class Fake:
+            url = 'http://webdip.local/api.php'
+            def __init__(self, *args): pass
+            def context(self, _):
+                result = copy.deepcopy(context)
+                if ready: result['member']['orderStatus'] = ['Ready', 'Completed']
+                return result
+            def public_file(self, file): return public if 'game.json' in file['url'] else VARIANT
+            def request(self, url, private, payload):
+                posts.append(copy.deepcopy(payload))
+                if payload['ready'] == 'Yes': ready.append(True)
+                self_check = len(payload['orders']) == 1
+                if not self_check: raise ValueError('No server slot for extra Wait')
+                return payload['orders']
+        config = dict(api_url=Fake.url, api_keys=dict(bot1='a'*64), game_ids=[5])
+        for choices, expected in ((['A MAR B', 'WAIVE'], 'Build Army'), (['WAIVE'], 'Wait')):
+            posts.clear(); ready.clear()
+            with self.subTest(choices=choices), patch('cpu_bot.client.choose_orders', return_value=choices):
+                self.assertEqual(run(config, submit=True, log=lambda _: None, client_class=Fake), 0)
+                self.assertEqual([p['ready'] for p in posts], ['No', 'Yes'])
+                self.assertEqual(posts[0]['orders'][0]['type'], expected)
 
     def test_config_requires_game_allowlist(self):
         with self.assertRaises(ValueError):validate_config(dict(api_url='http://webdip.local/api.php',api_keys={'bot1':'a'*64}))
