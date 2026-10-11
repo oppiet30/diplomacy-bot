@@ -69,6 +69,28 @@ class BotTests(unittest.TestCase):
         for order in choose_orders(board.game,'FRANCE'):
             self.assertIn(order, {'A PAR R PIC','A PAR D'})
 
+    def test_retreat_destination_without_status_row(self):
+        engine = Game()
+        state = engine.get_state()
+        state['name'] = 'F1902R'
+        state['units']['AUSTRIA'] = ['*A RUM', 'A VIE', 'A BUD']
+        state['retreats']['AUSTRIA'] = {'A RUM': ['SER']}
+        engine.set_state(state)
+        context, public = snapshot(engine)
+        public['territories'] = [t for t in public['territories']
+                                 if t['terrID'] != byname('Serbia')]
+        next(t for t in public['territories']
+             if t['terrID'] == byname('Rumania'))['occupiedFromTerrID'] = byname('Galicia')
+        next(t for t in public['territories']
+             if t['terrID'] == byname('Bulgaria'))['standoff'] = True
+        board = Board(context, public, VARIANT)
+        destinations = board.game.powers['AUSTRIA'].retreats['A RUM']
+        self.assertIn('SER', destinations)
+        self.assertNotIn('GAL', destinations)
+        self.assertNotIn('BUL', destinations)
+        for order in choose_orders(board.game, 'AUSTRIA'):
+            self.assertIn(order, {'A RUM R ' + loc for loc in destinations} | {'A RUM D'})
+
     def test_self_play_and_api_conversion_all_phases(self):
         random.seed(42);engine=Game();phases=set()
         for _ in range(40):
