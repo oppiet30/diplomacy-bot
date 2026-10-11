@@ -70,6 +70,7 @@ def playable(context):
             and game.get('processStatus') == 'Not-processing'
             and game.get('phase') in ('Diplomacy', 'Retreats', 'Builds')
             and member.get('status') == 'Playing' and 'Ready' not in member.get('orderStatus', [])
+            and 'None' not in member.get('orderStatus', [])
             and 'Pause' not in member.get('votes', []))
 
 
@@ -102,12 +103,20 @@ def run(config, submit=False, log=print, client_class=Client):
                 if not playable(context):
                     log(f'{label} game {game_id}: skipped')
                     continue
+                game = context['game']
+                slots = (context.get('orders') or {}).get('orders')
+                if game['phase'] in ('Builds', 'Retreats') and slots == []:
+                    log(f'{label} game {game_id}: skipped (no orders required)')
+                    continue
                 board = Board(context, client.public_file(context['files']['game']), client.public_file(context['files']['variant']))
                 country = context['member']['countryID']
                 power = board.countries[country]
-                game = context['game']
                 random.seed(int.from_bytes(hashlib.sha256(f'{game_id}:{country}:{game["turn"]}:{game["phase"]}'.encode()).digest(), 'big'))
                 orders = choose_orders(board.game, power)
+                # webDiplomacy caps builds at the number of free home centers.
+                # The engine can append WAIVE for additional unavailable builds.
+                if game['phase'] == 'Builds' and isinstance(slots, list):
+                    orders = orders[:len(slots)]
                 payload = {k: game[k] for k in ('gameID', 'turn', 'phase')}
                 payload.update(countryID=country, ready='Yes', orders=[board.translate(o, country) for o in orders])
                 if submit:
