@@ -55,7 +55,7 @@ class Board:
                     parent_id = self.ids[loc[:3]]
                     if (edge['army' if row['type'] == 'Army' else 'fleet']
                             and loc[:3] not in occupied and loc[:3] != excluded
-                            and not status[parent_id]['standoff']):
+                            and not status.get(parent_id, {}).get('standoff', False)):
                         dests.append(loc)
                 retreats[power][unit] = dests
         self.game.set_state({'name': date, 'units': units, 'centers': centers, 'retreats': retreats})
